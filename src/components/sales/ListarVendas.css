@@ -1,0 +1,30 @@
+#listar-vendas {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.vendas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.vendas-table th,
+.vendas-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.vendas-table th {
+    background-color: #5f5ff5;
+    color: white;
+}
+
+.vendas-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.vendas-table tr:hover {
+    background-color: #ddd;
+}

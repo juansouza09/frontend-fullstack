@@ -1,0 +1,44 @@
+/* ListUser.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50; /* Cor do cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Cor ao passar o mouse sobre as linhas */
+}
+
+button {
+  background-color: #008cba; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005f73; /* Cor do botão ao passar o mouse */
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}

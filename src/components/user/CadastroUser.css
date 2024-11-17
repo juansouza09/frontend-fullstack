@@ -1,0 +1,42 @@
+#formulario {
+  max-width: 450px;
+  margin: 200px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"],
+select {
+  width: 90%;
+  border-radius: 15px;
+}
+
+input[type="email"],
+select {
+  width: 90%;
+  border-radius: 15px;
+}
+
+input[type="password"],
+select {
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 3px;
+}
+
+button[type="submit"] {
+  width: 90%;
+  border-radius: 15px;
+  margin: 20px 5px 5px 0;
+}
+
+.forms {
+  background-color: rgb(95, 95, 245);
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 120%;
+  padding: 20px;
+}
