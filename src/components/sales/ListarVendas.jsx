@@ -7,7 +7,7 @@ function ListarVendas() {
     useEffect(() => {
         async function fetchVendas() {
             try {
-                const response = await fetch("http://localhost:8000/api/vendas");
+                const response = await fetch("http://localhost:8080/api/vendas");
                 const data = await response.json();
                 if (response.ok) {
                     setVendas(data);

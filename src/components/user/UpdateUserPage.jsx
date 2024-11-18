@@ -18,7 +18,7 @@ function UpdateUserPage() {
     const fetchUser = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8000/api/users/user/${id}`
+          `http://localhost:8080/api/users/user/${id}`
         );
         const data = await response.json();
         if (response.ok) {
@@ -63,7 +63,7 @@ function UpdateUserPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:8000/api/users/user/${id}`,
+        `http://localhost:8080/api/users/user/${id}`,
         {
           method: "PUT",
           headers: {

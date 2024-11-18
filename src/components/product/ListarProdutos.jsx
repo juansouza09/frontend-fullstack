@@ -10,9 +10,10 @@ function ListarProdutos() {
     useEffect(() => {
         async function fetchProdutos() {
             try {
-                const response = await fetch("http://localhost:8000/api/produtos/produtos");
+                const response = await fetch("http://localhost:8080/api/produtos/produtos");
                 if (response.ok) {
                     const data = await response.json();
+                    console.log(data)
                     setProdutos(data);
                 } else {
                     alert("Erro ao buscar os produtos.");
@@ -46,6 +47,7 @@ function ListarProdutos() {
                         <th>Nome</th>
                         <th>Quantidade</th>
                         <th>Preço</th>
+                        <th>ID do Usuário</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -56,6 +58,7 @@ function ListarProdutos() {
                             <td>{produto.name}</td>
                             <td>{produto.quantity}</td>
                             <td>R$ {produto.price.toFixed(2)}</td>
+                            <td>{produto.userId}</td>
                             <td>
                                 <button
                                     className="btn-editar"

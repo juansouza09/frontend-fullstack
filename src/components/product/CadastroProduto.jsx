@@ -6,7 +6,8 @@ function CadastroProduto() {
     const [formData, setFormData] = useState({
         name: '',
         quantity: '',
-        price: ''
+        price: '',
+        userId: ''
     });
 
     const handleChange = (e) => {
@@ -20,7 +21,7 @@ function CadastroProduto() {
     async function enviarProduto(event) {
         event.preventDefault();
 
-        if (!formData.name || !formData.quantity || !formData.price) {
+        if (!formData.name || !formData.quantity || !formData.price || !formData.userId) {
             alert("Por favor, preencha todos os campos!");
             return;
         }
@@ -32,7 +33,7 @@ function CadastroProduto() {
         };
 
         try {
-            const response = await fetch("http://localhost:8000/api/produtos", {
+            const response = await fetch("http://localhost:8080/api/produtos", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -84,6 +85,15 @@ function CadastroProduto() {
                     name="price"
                     id="price"
                     value={formData.price}
+                    onChange={handleChange}
+                />
+                
+                <label htmlFor="userId">ID do Usuário</label>
+                <input
+                    type="text"
+                    name="userId"
+                    id="userId"
+                    value={formData.userId}
                     onChange={handleChange}
                 />
 
