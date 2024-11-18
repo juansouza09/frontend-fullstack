@@ -10,6 +10,9 @@ import UpdateUser from "./components/user/UpdateUserPage";
 import ListProduct from "./components/product/ListarProdutos"; // Importando o componente ListarProdutos
 import UpdateProduct from "./components/product/AtualizarProduto"; // Importando o componente AtualizarProduto
 
+import ListVendas from "./components/sales/ListarVendas";
+import CadastroVenda from "./components/sales/Vendas";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -25,6 +28,10 @@ root.render(
         <Route path="/cadastroProduct" element={<CadastroProduct />}></Route>
         <Route path="/listProduct" element={<ListProduct />}></Route>
         <Route path="/update_product/:id" element={<UpdateProduct />}></Route>
+
+        <Route path="/cadastroSale" element={<CadastroVenda />}></Route>
+        <Route path="/listarSale" element={<ListVendas />}></Route>
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

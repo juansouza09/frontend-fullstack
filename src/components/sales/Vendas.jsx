@@ -55,7 +55,7 @@ function Vendas() {
 
                 <label htmlFor="userId">ID do Usuário</label>
                 <input
-                    type="number"
+                    type="text"
                     name="userId"
                     id="userId"
                     value={vendaData.userId}
