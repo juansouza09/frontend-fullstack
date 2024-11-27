@@ -26,7 +26,7 @@ function Vendas() {
         }
 
         try {
-            const response = await fetch("http://localhost:8080/api/vendas", {
+            const response = await fetch("http://localhost:8000/api/vendas", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

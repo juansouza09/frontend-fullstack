@@ -10,7 +10,7 @@ function ListarProdutos() {
     useEffect(() => {
         async function fetchProdutos() {
             try {
-                const response = await fetch("http://localhost:8080/api/produtos/produtos");
+                const response = await fetch("http://localhost:8000/api/produtos/produtos");
                 if (response.ok) {
                     const data = await response.json();
                     console.log(data)

@@ -29,8 +29,10 @@ root.render(
         <Route path="/listProduct" element={<ListProduct />}></Route>
         <Route path="/update_product/:id" element={<UpdateProduct />}></Route>
 
+        {/* Rotas de vendas */}
         <Route path="/cadastroSale" element={<CadastroVenda />}></Route>
         <Route path="/listarSale" element={<ListVendas />}></Route>
+        <Route path="/inativar_venda/:id" element={<inativarVenda />}></Route>
 
       </Routes>
     </BrowserRouter>

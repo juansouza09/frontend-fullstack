@@ -9,7 +9,7 @@ function ListUser() {
 
   // Função para buscar dados dos usuários
   const listagemUser = () => {
-    fetch("http://localhost:8080/api/users/users")
+    fetch("http://localhost:8000/api/users/users")
       .then((response) => response.json())
       .then((data) => setDados(data))
       .catch((error) => console.error("Erro ao buscar dados:", error));

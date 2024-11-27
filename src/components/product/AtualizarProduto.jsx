@@ -17,7 +17,7 @@ function AtualizarProduto() {
     async function fetchProduto() {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/produtos/produto/${id}`
+          `http://localhost:8000/api/produtos/produto/${id}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -68,7 +68,7 @@ function AtualizarProduto() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/produtos/produto/${id}`,
+        `http://localhost:8000/api/produtos/produto/${id}`,
         {
           method: "PUT",
           headers: {

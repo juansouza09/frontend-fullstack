@@ -33,7 +33,7 @@ function CadastroProduto() {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/api/produtos", {
+            const response = await fetch("http://localhost:8000/api/produtos", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
